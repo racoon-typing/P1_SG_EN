@@ -1,60 +1,19 @@
 .main-header {
     width: 100%;
-    background-color: #e8e8e8;
 
     &__wrapper {
         box-sizing: border-box;
         max-width: 500px;
         margin: 0 auto;
         padding: 10px 20px;
+
+        // &-button {
+        //     display: flex;
+        //     justify-content: end;
+        // }
     }
 
-    &__wrapper-logo {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        text-transform: uppercase;
-        padding-bottom: 10px;
-        border-bottom: 1px solid #000000;
-    }
 
-    &__logo {
-        font-weight: 700;
-        font-size: 20px;
-        line-height: 20px;
-    }
-
-    &__wrapper-button {
-        display: flex;
-        align-items: center;
-    }
-
-    &__button-buy {
-        font-family: @second-font;
-        font-style: normal;
-        text-align: center;
-        text-transform: uppercase;
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 18px;
-        color: #ffffff;
-        background-color: @bg-color-main;
-        border: none;
-        padding: 10px 60px;
-        font-weight: 700;
-        letter-spacing: 1px;
-        display: block;
-        text-decoration: none;
-
-        &:hover {
-            color: @color-main;
-            background-color: #ffffff;
-        }
-
-        &:active {
-            outline: 1px solid @color-main;
-        }
-    }
 
     &__button-nav {
         position: relative;
@@ -105,16 +64,6 @@
         rotate: 45deg;
         top: 8;
         right: 0;
-    }
-
-    &__button-nav-icon {
-        display: block;
-        width: 24px;
-        height: 16px;
-        background-image: url('/source/img/icons/burger.svg');
-        background-position: center;
-        background-repeat: no-repeat;
-        z-index: 1;
     }
     
     &__nav--close {
