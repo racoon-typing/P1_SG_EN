@@ -1,0 +1,235 @@
+.main-header {
+    width: 100%;
+    background-color: #e8e8e8;
+
+    &__wrapper {
+        box-sizing: border-box;
+        max-width: 500px;
+        margin: 0 auto;
+        padding: 10px 20px;
+    }
+
+    &__wrapper-logo {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-transform: uppercase;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #000000;
+    }
+
+    &__logo {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 20px;
+    }
+
+    &__wrapper-button {
+        display: flex;
+        align-items: center;
+    }
+
+    &__button-buy {
+        font-family: @second-font;
+        font-style: normal;
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 18px;
+        color: #ffffff;
+        background-color: @bg-color-main;
+        border: none;
+        padding: 10px 60px;
+        font-weight: 700;
+        letter-spacing: 1px;
+        display: block;
+        text-decoration: none;
+
+        &:hover {
+            color: @color-main;
+            background-color: #ffffff;
+        }
+
+        &:active {
+            outline: 1px solid @color-main;
+        }
+    }
+
+    &__button-nav {
+        position: relative;
+        border: none;
+        width: 24px;
+        height: 20px;
+        background-color: transparent;
+        margin-left: 20px;
+        cursor: pointer;
+    }
+
+    &__button-nav::before {
+        position: absolute;
+        content: url("../img/icons/burger.svg");
+        width: 24px;
+        height: 20px;
+        top: 0;
+        left: 0;
+    }
+
+    &__button-nav--cross {
+        position: relative;
+        border: none;
+        width: 24px;
+        height: 20px;
+        background-color: transparent;
+        margin-left: 20px;
+        cursor: pointer;
+        padding: 0;
+    }
+
+    &__button-nav--cross::before,
+    &__button-nav--cross::after {
+        position: absolute;
+        content: '';
+        width: 24px;
+        height: 2px;
+        background-color: #000000;
+    }
+
+    &__button-nav--cross::before {
+        rotate: -45deg;
+        top: 8;
+        left: 0;
+    }
+
+    &__button-nav--cross::after {
+        rotate: 45deg;
+        top: 8;
+        right: 0;
+    }
+
+    &__button-nav-icon {
+        display: block;
+        width: 24px;
+        height: 16px;
+        background-image: url('/source/img/icons/burger.svg');
+        background-position: center;
+        background-repeat: no-repeat;
+        z-index: 1;
+    }
+    
+    &__nav--close {
+        display: none;
+    }
+
+    &__list {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-bottom: 1px solid #000000;
+
+        &-link {
+            text-decoration: none;
+            color: #000000;
+        }
+
+        &:hover {
+            background-color: #ffffff;
+        }
+
+        &-text {
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 20px;
+            margin: 0;
+            padding-top: 22px;
+            padding-bottom: 24px;
+            text-transform: uppercase;
+        }
+    }
+}
+
+
+@media (min-width: 768px) {
+    .main-header {
+        &__wrapper {
+            max-width: 1200px;
+            box-sizing: border-box;
+            padding: 20px 30px;
+        }
+
+        &__logo {
+            font-size: 24px;
+            line-height: 28px;
+        }
+
+        &__button-buy {
+            font-size: 18px;
+            line-height: 24px;
+        }
+
+        &__button-nav {
+            display: none;
+        }
+
+        &__nav--close {
+            display: block;
+        }
+
+        &__list {
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 1px solid #000000;
+        }
+
+        &__item {
+            width: 160px;
+            border: none;
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .main-header {
+        &__wrapper {
+            position: relative;
+            max-width: 1440px;
+            padding: 40px 110px;
+        }
+
+        &__wrapper-logo {
+            min-height: 67px;
+            border: none;
+        }
+
+        &__nav {
+            position: absolute;
+            top: 41px;
+            right: 26%;
+        }
+
+        &__list {
+            border: none;
+        }
+
+        &__item {
+            width: 125px;
+            margin-right: 10px;
+            border-bottom: 1px solid #000000;
+
+            &-text {
+                font-size: 18px;
+                line-height: 18px;
+            }
+        }
+
+        &__item:last-child {
+            margin-right: 0;
+        }
+    }
+}

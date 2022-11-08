@@ -1,0 +1,44 @@
+.main-footer {
+    width: 100%;
+    flex-shrink: 0;
+    background-color: @bg-color-main;
+
+    &__wrapper {
+        box-sizing: border-box;
+        max-width: 500px;
+        margin: 0 auto;
+        box-sizing: border-box;
+        margin: 0 auto;
+        color: #ffffff;
+        padding: 20px;
+    }
+}
+
+@media (min-width: 768px) {
+    .main-footer {
+        &__wrapper {
+            max-width: 1200px;
+            padding: 40px 30px;
+        }
+
+        &__container {
+            margin-bottom: 30px;
+        }
+
+        &__author {
+            text-align: center;
+            font-size: 20px;
+            line-height: 24px;
+            margin: 0;
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .main-footer {
+        &__wrapper {
+            width: 1200px;
+            padding: 40px 110px;
+        }
+    }
+}
