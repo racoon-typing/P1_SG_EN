@@ -17,6 +17,8 @@ if (buttonNav) {
 }
 
 
+
+
 // Инициализируем слайдер 
 // new Swiper('.image-slider', {
 //     // Стрелки
