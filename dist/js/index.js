@@ -16,7 +16,31 @@ if (buttonNav) {
     });
 }
 
+// Дата + 1 день
+function getData() {
+    // Нода даты
+    let dataNode = document.querySelector('.data');
 
+    // Объект дата
+    let today = new Date;
+    let tomorrow = new Date(today.getTime() + (24 * 60 * 60 * 1000));
+    let dayTomorrow = tomorrow.getDate();
+    let monthTomorrow = tomorrow.getMonth() + 1; //в js месяц отсчитывается с нуля
+    let yearTomorrow = tomorrow.getFullYear();
+
+    // Проверка
+    if (monthTomorrow < 10) {
+        // Вывод на страницу
+        let nextDay = `${dayTomorrow}/0${monthTomorrow}/${yearTomorrow}`;
+        dataNode.textContent = nextDay;
+    } else {
+        // Вывод на страницу
+        let nextDay = `${dayTomorrow}/${monthTomorrow}/${yearTomorrow}`;
+        dataNode.textContent = nextDay;
+    }
+}
+
+getData();
 
 
 // Инициализируем слайдер 
