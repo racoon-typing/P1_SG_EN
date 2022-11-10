@@ -300,7 +300,7 @@
 .offer__text--icon {
   rotate: 90deg;
 }
-@media (max-width: 758px) and (min-height: 840px) {
+@media (max-width: 768px) and (min-height: 840px) {
   .offer__title {
     font-size: 36px;
     margin-bottom: 0;
@@ -337,19 +337,16 @@
   margin: 0 auto;
   padding: 40px 20px;
   padding-top: 90px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  justify-content: center;
+  display: grid;
+  grid-template-rows: 40% 1fr 55%;
 }
 .change__video {
   width: 100%;
-  height: 220px;
-  margin-bottom: 30px;
+  height: 100%;
 }
 .change__title {
   position: relative;
-  font-size: 28px;
+  font-size: 30px;
   line-height: normal;
   margin: 0;
   padding-bottom: 10px;
@@ -369,6 +366,18 @@
   font-size: 15px;
   line-height: normal;
 }
+.change__text-wrapper {
+  height: 100%;
+  grid-row: 3 / 4;
+}
+@media (max-width: 768px) and (min-height: 840px) {
+  .change__title {
+    font-size: 36px;
+  }
+  .change__text {
+    font-size: 17px;
+  }
+}
 .review {
   width: 100%;
 }
@@ -380,18 +389,19 @@
   margin: 0 auto;
   padding: 40px 20px;
   padding-top: 80px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  display: grid;
+  grid-template-rows: 12% 1fr 24%;
 }
 .review__title {
-  font-size: 28px;
+  font-size: 30px;
   line-height: normal;
   margin: 0;
-  padding-bottom: 10px;
-  margin-bottom: 20px;
-  text-align: center;
   color: #e50914;
+}
+.review__title-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .review__sub-title {
   font-size: 20px;
@@ -408,7 +418,6 @@
   width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  margin-bottom: 25px;
 }
 .review__item {
   position: relative;
@@ -445,6 +454,21 @@
   margin: 0;
   font-size: 18px;
   line-height: normal;
+}
+.review__text-wrapper {
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 768px) and (min-height: 840px) {
+  .review__wrapper {
+    grid-template-rows: 12% 1fr 39%;
+  }
+  .review__title {
+    font-size: 36px;
+  }
+  .review__text {
+    font-size: 24px;
+  }
 }
 .action {
   width: 100%;
@@ -523,4 +547,15 @@
   border-radius: 50%;
   border: 2px solid #ffffff;
   margin-top: 40px;
+}
+@media (max-width: 768px) and (min-height: 840px) {
+  .review__wrapper {
+    grid-template-rows: 12% 1fr 39%;
+  }
+  .review__title {
+    font-size: 36px;
+  }
+  .review__text {
+    font-size: 24px;
+  }
 }
