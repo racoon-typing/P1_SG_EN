@@ -2,6 +2,7 @@
     width: 100%; 
     background-color: @color-main;
     color: @color-fourth;
+    scroll-snap-align: start;
 
     &__wrapper {
         position: relative;
@@ -53,7 +54,7 @@
 
 // Рендеринг по высоте
 @media (max-width: 768px) {
-    @media (min-height: 840px) {
+    @media (min-height: 800px) {
         .change {
             &__title {
                 font-size: 36px;

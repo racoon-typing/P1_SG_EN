@@ -1,5 +1,6 @@
 .review {
     width: 100%;
+    scroll-snap-align: start;
 
     &__wrapper {
         position: relative;
@@ -93,7 +94,7 @@
 
 // Рендеринг по высоте
 @media (max-width: 768px) {
-    @media (min-height: 840px) {
+    @media (min-height: 800px) {
         .review {
             &__wrapper {
                 grid-template-rows: 12% 1fr 39%;
