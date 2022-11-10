@@ -43,17 +43,6 @@ function getData() {
 getData();
 
 // БОЛЬШОЕ ФОТО
-let listNode = document.querySelector('.review__list');
-
-let num;
-listNode.addEventListener('click', function (e) {
-    let num = e.target.id;
-
-    console.log(num);
-    return num;
-});
-
-
 // Объект данных
 let reviewObject = {
     data: [
@@ -76,9 +65,43 @@ let reviewObject = {
     ]
 }
 
+// Список
+let listNode = document.querySelector('.review__list');
+let reviewNode = document.querySelector('.review');
 
-// Шаблон
-let template = document.querySelector('.review__big');
+// Функция заполнения шаблона
+function createTemplate(object, num) {
+    // Шаблон
+    let template = document.querySelector('#review__big');
+    let reviewBig = template.content.cloneNode(true);
+    let reviewImg = reviewBig.querySelector('.review__big-img');
+    let reviewText = reviewBig.querySelector('.review__big-text');
+
+    console.log(reviewImg);
+    console.log(reviewText);
+
+    // Подставлет значения
+    reviewImg.src = object.data[num].link;
+    reviewText.textContent = object.data[num].text;
+
+    console.log(reviewImg);
+    console.log(reviewText);
+
+    reviewNode.append(reviewBig);
+    let commentNode = document.querySelector('.review__big-wrapper');
+    commentNode.classList.remove('review__big-wrapper--close');
+}
+
+// Создает большое фото
+listNode.addEventListener('click', function (e) {
+    let num = e.target.id;
+    createTemplate(reviewObject, num);
+});
+
+
+
+
+
 
 
 
