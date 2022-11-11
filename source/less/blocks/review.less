@@ -117,6 +117,7 @@
                 position: relative;
                 width: 100%;
                 background-color: @color-fourth;
+                border-radius: 10px;
             }
 
             &--close {
@@ -161,16 +162,39 @@
 
         &-img {
             display: block;
-            margin-bottom: 20px;
             width: 100%;
             height: auto;
+            border-radius: 10px 10px 0 0;
+        }
+
+        &-surname {
+            position: relative;
+            margin: 0;
+            font-size: 20px;
+            line-height: normal;
+            margin: 20px 10px;
+            padding-bottom: 8px;
+            margin-bottom: 20px;
+
+            &::before {
+                position: absolute;
+                content: '';
+                width: 10%;
+                height: 1px;
+                background-color: black;
+                bottom: 0;
+                left: 0;
+            }
         }
 
         &-text {
             display: block;
             box-sizing: border-box;
             margin: 0;
-            padding: 10px;
+            padding: 20px 10px;
+            padding-top: 0;
+            font-size: 16px;
+            line-height: normal;
         }
     }
 }

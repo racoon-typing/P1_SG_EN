@@ -48,18 +48,22 @@ let reviewObject = {
     data: [
         {
             link: 'img/comment/comment-1.jpg',
+            surname: 'Анна Рыбакова',
             text: 'Рыбный текст – это текст, выполняющий исключительно утилитарную функцию. Он не вписывается в контекст сайта, на котором используется, и нужен только для заполнения пространства.'
         },
         {
             link: 'img/comment/comment-2.jpg',
+            surname: 'Лена Жукова',
             text: 'Рыбный текст – это текст, выполняющий исключительно утилитарную функцию. Он не вписывается в контекст сайта, на котором используется, и нужен только для заполнения пространства.'
         },
         {
             link: 'img/comment/comment-3.jpg',
+            surname: 'Света Пыжова',
             text: 'Рыбный текст – это текст, выполняющий исключительно утилитарную функцию. Он не вписывается в контекст сайта, на котором используется, и нужен только для заполнения пространства.'
         },
         {
             link: 'img/comment/comment-4.png',
+            surname: 'Кирил Крюков',
             text: 'Рыбный текст – это текст, выполняющий исключительно утилитарную функцию. Он не вписывается в контекст сайта, на котором используется, и нужен только для заполнения пространства.'
         }
     ]
@@ -75,10 +79,12 @@ function createTemplate(object, num) {
     let template = document.querySelector('#review__big');
     let reviewBig = template.content.cloneNode(true);
     let reviewImg = reviewBig.querySelector('.review__big-img');
+    let reviewSurname = reviewBig.querySelector('.review__big-surname');
     let reviewText = reviewBig.querySelector('.review__big-text');
 
     // Подставлет значения
     reviewImg.src = object.data[num].link;
+    reviewSurname.textContent = object.data[num].surname;
     reviewText.textContent = object.data[num].text;
 
     reviewNode.append(reviewBig);
@@ -90,9 +96,27 @@ function closeModalWindow() {
     let commentNode = document.querySelector('.review__big-wrapper');
     let commentButtonClose = document.querySelector('.review__big-button');
 
-    commentButtonClose.addEventListener('click', () => {
+    commentButtonClose.addEventListener('click', (e) => {
         commentNode.remove();
     });
+
+    document.addEventListener('keydown', function (e) {
+        if (e.key == 'Escape') { // код клавиши Escape, но можно использовать e.key
+            commentNode.remove();
+        }
+    });
+
+    // document.addEventListener('click', function (e) {
+    //     let bigWrapperContent = document.querySelector('.review__big-wrapper-content');
+    //     const click = e.composedPath().includes(bigWrapperContent);
+    //     console.log(click);
+ 
+    //     console.log('Клик');
+
+    //     if (!click) {
+    //         commentNode.remove();
+    //     }
+    // });
 }
 
 
