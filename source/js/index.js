@@ -77,25 +77,30 @@ function createTemplate(object, num) {
     let reviewImg = reviewBig.querySelector('.review__big-img');
     let reviewText = reviewBig.querySelector('.review__big-text');
 
-    console.log(reviewImg);
-    console.log(reviewText);
-
     // Подставлет значения
     reviewImg.src = object.data[num].link;
     reviewText.textContent = object.data[num].text;
-
-    console.log(reviewImg);
-    console.log(reviewText);
 
     reviewNode.append(reviewBig);
     let commentNode = document.querySelector('.review__big-wrapper');
     commentNode.classList.remove('review__big-wrapper--close');
 }
 
+function closeModalWindow() {
+    let commentNode = document.querySelector('.review__big-wrapper');
+    let commentButtonClose = document.querySelector('.review__big-button');
+
+    commentButtonClose.addEventListener('click', () => {
+        commentNode.remove();
+    });
+}
+
+
 // Создает большое фото
 listNode.addEventListener('click', function (e) {
     let num = e.target.id;
     createTemplate(reviewObject, num);
+    closeModalWindow();
 });
 
 
