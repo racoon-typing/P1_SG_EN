@@ -74,6 +74,7 @@ let reviewObject = {
 }
 
 // Список
+let mainContainer = document.querySelector('.main-container');
 let listNode = document.querySelector('.review__list');
 let reviewNode = document.querySelector('.review');
 
@@ -94,6 +95,7 @@ function createTemplate(object, num) {
     reviewNode.append(reviewBig);
     let commentNode = document.querySelector('.review__big-wrapper');
     commentNode.classList.remove('review__big-wrapper--close');
+    mainContainer.style.overflow = 'hidden';
 }
 
 function closeModalWindow() {
@@ -102,11 +104,13 @@ function closeModalWindow() {
 
     commentButtonClose.addEventListener('click', (e) => {
         commentNode.remove();
+        mainContainer.style.overflow = 'auto';
     });
 
     document.addEventListener('keydown', function (e) {
         if (e.key == 'Escape') { // код клавиши Escape, но можно использовать e.key
             commentNode.remove();
+            mainContainer.style.overflow = 'auto';
         }
     });
 
@@ -117,6 +121,7 @@ function closeModalWindow() {
 
         if (clickIntside && !clickOutside) {
             commentNode.remove();
+            mainContainer.style.overflow = 'auto';
         }
     });
 }

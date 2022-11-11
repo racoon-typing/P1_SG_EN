@@ -12,8 +12,9 @@
         margin: 0 auto;
         padding: 40px 20px;
         padding-top: 80px;
+        padding-bottom: 93px;
         display: grid;
-        grid-template-rows: 12% 1fr 24%;
+        grid-template-rows: 10% 1fr 19%;
     }
 
     &__title {
@@ -27,15 +28,6 @@
             align-items: center;
             justify-content: center;
         }
-    }
-
-    &__sub-title {
-        font-size: 20px;
-        line-height: normal;
-        margin: 0;
-        text-align: center;
-        background-color: black;
-        color: white;
     }
 
     &__list {
@@ -96,6 +88,34 @@
             align-items: center;
         }
     }
+
+    &__link {
+        display: block;
+        text-decoration: none;
+        position: absolute;
+        content: '';
+        bottom: 50px;
+        left: 38px;
+        rotate: 90deg;
+
+        &::before {
+            position: absolute;
+            content: '';
+            top: -13px;
+            left: -19px;
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            background-color: black;
+        }
+
+        &--icon {
+            display: block;
+            position: relative;
+            fill: #ffffff;
+        }
+    }
+
 
     &__big {
         &-wrapper {
