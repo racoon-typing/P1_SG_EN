@@ -27,14 +27,18 @@
         height: 20px;
         background-color: transparent;
         cursor: pointer;
+        padding: 0;
 
-        &::before {
+        &::after {
             position: absolute;
-            content: url("../img/icons/burger.svg");
-            width: 24px;
-            height: 20px;
-            top: 0;
-            left: 0;
+            content: '';
+            top: -13px;
+            left: -11px;
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            background-color: rgba(255, 255, 255, 0.8);
+            z-index: -1;
         }
 
         &--cross {
@@ -55,18 +59,17 @@
         content: '';
         width: 24px;
         height: 2px;
+        top: 8px;
         background-color: #000000;
     }
 
     &__button-nav--cross::before {
         rotate: -45deg;
-        top: 8;
         left: 0;
     }
 
     &__button-nav--cross::after {
         rotate: 45deg;
-        top: 8;
         right: 0;
     }
 

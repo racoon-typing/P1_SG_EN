@@ -1,5 +1,6 @@
 let buttonNav = document.querySelector('.main-header__button-nav');
 let navNode = document.querySelector('.main-header__nav');
+let buttonNavIcon = document.querySelector('.main-header__button-nav--icon');
 
 if (buttonNav) {
     buttonNav.addEventListener('click', function () {
@@ -8,9 +9,12 @@ if (buttonNav) {
 
         if (navNode.classList.contains('main-header__nav--open')) {
             buttonNav.classList.remove('main-header__button-nav');
+            buttonNavIcon.style.display = 'none';
             buttonNav.classList.add('main-header__button-nav--cross');
+
         } else {
             buttonNav.classList.add('main-header__button-nav');
+            buttonNavIcon.style.display = 'block';
             buttonNav.classList.remove('main-header__button-nav--cross');
         }
     });
@@ -106,17 +110,15 @@ function closeModalWindow() {
         }
     });
 
-    // document.addEventListener('click', function (e) {
-    //     let bigWrapperContent = document.querySelector('.review__big-wrapper-content');
-    //     const click = e.composedPath().includes(bigWrapperContent);
-    //     console.log(click);
- 
-    //     console.log('Клик');
+    reviewNode.addEventListener('click', function (e) {
+        let bigWrapperContent = document.querySelector('.review__big-wrapper-content');
+        const clickIntside = e.composedPath().includes(commentNode);
+        const clickOutside = e.composedPath().includes(bigWrapperContent);
 
-    //     if (!click) {
-    //         commentNode.remove();
-    //     }
-    // });
+        if (clickIntside && !clickOutside) {
+            commentNode.remove();
+        }
+    });
 }
 
 
@@ -126,8 +128,6 @@ listNode.addEventListener('click', function (e) {
     createTemplate(reviewObject, num);
     closeModalWindow();
 });
-
-
 
 
 
