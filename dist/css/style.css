@@ -335,6 +335,51 @@
   margin: 0 auto;
   padding: 40px 20px;
   padding-top: 80px;
+  padding-bottom: 120px;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+}
+.info__list {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  width: 100%;
+  height: 400px;
+  background-color: #374785;
+  color: #ffffff;
+  overflow: auto;
+  scroll-snap-type: x mandatory;
+}
+.info__item {
+  width: 100%;
+  box-sizing: border-box;
+  flex-shrink: 0;
+  padding: 20px;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+}
+.info__pointer {
+  display: block;
+  fill: #ffffff;
+  padding-left: 70px;
+}
+.info__pointer-wrapper {
+  display: block;
+  background-color: #374785;
+  padding: 20px;
+  margin: 0;
+  position: relative;
+}
+.info__pointer-wrapper::before {
+  position: absolute;
+  content: '';
+  width: 70px;
+  height: 2px;
+  background-color: #ffffff;
+  top: 29px;
+  left: 29px;
 }
 .info__link {
   display: block;
