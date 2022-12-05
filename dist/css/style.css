@@ -769,9 +769,20 @@
   border-radius: 5px;
   margin-top: 20px;
   outline: 1px solid #e50914;
+  animation: leaves 2s ease-in-out infinite alternate;
 }
 .program__button:active {
   background-color: lightgrey;
+}
+@keyframes leaves {
+  0% {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+  }
+  100% {
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+  }
 }
 .program__modal-window {
   position: absolute;
@@ -785,6 +796,7 @@
   background-color: rgba(0, 0, 0, 0.7);
 }
 .program__modal-window-wrapper {
+  position: relative;
   width: 100%;
   height: 567px;
   box-sizing: border-box;
@@ -792,6 +804,34 @@
   padding: 10px;
   overflow-y: auto;
   background-color: #ffffff;
+}
+.program__modal-window-wrapper__big-button {
+  position: relative;
+  content: '';
+  width: 40px;
+  height: 40px;
+  left: 0;
+  background-color: transparent;
+  border: none;
+  margin-bottom: 10px;
+}
+.program__modal-window-wrapper__big-button::before,
+.program__modal-window-wrapper__big-button::after {
+  position: absolute;
+  content: '';
+  width: 35px;
+  height: 2px;
+  background-color: black;
+}
+.program__modal-window-wrapper__big-button::before {
+  bottom: 18px;
+  left: 2px;
+  rotate: -45deg;
+}
+.program__modal-window-wrapper__big-button::after {
+  bottom: 18px;
+  left: 3px;
+  rotate: 45deg;
 }
 .program__modal-window-wrapper-title {
   margin: 0;
@@ -844,6 +884,9 @@
 }
 .program__modal-window-wrapper-item:last-child {
   margin-bottom: 0;
+}
+.program__modal-window-wrapper-item--second {
+  font-size: 14px;
 }
 .action {
   width: 100%;
