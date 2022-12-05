@@ -402,28 +402,16 @@
 .info__sub-item:last-child {
   margin-bottom: 0;
 }
-.info__sub-item--right {
-  justify-content: flex-end;
-}
 .info__sub-item-icon {
   width: 40px;
   height: 40px;
   border-radius: 50%;
   margin-right: 10px;
 }
-.info__sub-item-icon--right {
-  order: 2;
-  margin: 0;
-  margin-left: 10px;
-}
 .info__sub-item-text {
   font-size: 16px;
   line-height: normal;
   margin: 0;
-}
-.info__sub-item-text--right {
-  text-align: right;
-  order: 1;
 }
 .info__pointer {
   display: block;
@@ -515,8 +503,10 @@
 }
 .change__text {
   margin: 0;
-  font-size: 15px;
+  font-size: 16px;
   line-height: normal;
+  text-align: justify;
+  text-indent: 20px;
 }
 .change__text-wrapper {
   height: 100%;
@@ -543,10 +533,10 @@
   min-height: 100vh;
   margin: 0 auto;
   padding: 40px 20px;
-  padding-top: 80px;
+  padding-top: 60px;
   padding-bottom: 93px;
   display: grid;
-  grid-template-rows: 10% 1fr 19%;
+  grid-template-rows: 10% 70% 19%;
 }
 .review__title {
   font-size: 30px;
@@ -566,6 +556,7 @@
   width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  margin-bottom: 10px;
 }
 .review__item {
   position: relative;
@@ -646,6 +637,7 @@
   justify-content: center;
   align-items: center;
   padding: 20px;
+  padding-top: 40px;
   z-index: 2;
   background-color: rgba(0, 0, 0, 0.7);
 }
@@ -719,7 +711,7 @@
   margin: 0;
   padding: 20px 10px;
   padding-top: 0;
-  font-size: 16px;
+  font-size: 13px;
   line-height: normal;
 }
 @media (max-width: 768px) and (min-height: 800px) {
@@ -732,6 +724,52 @@
   .review__text {
     font-size: 24px;
   }
+}
+.program {
+  width: 100%;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+}
+.program__wrapper {
+  position: relative;
+  box-sizing: border-box;
+  max-width: 500px;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 40px 20px;
+  padding-top: 80px;
+  padding-bottom: 68px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.program__title {
+  margin: 0;
+  font-size: 30px;
+  line-height: normal;
+  margin-bottom: 20px;
+}
+.program__title--second {
+  color: #e50914;
+}
+.program__sub-title {
+  margin: 0;
+  font-size: 18px;
+  line-height: normal;
+  margin-bottom: 10px;
+}
+.program__description {
+  margin: 0;
+}
+.program__button {
+  width: 200px;
+  min-height: 40px;
+  border: none;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+.program__button:active {
+  background-color: lightgrey;
 }
 .action {
   width: 100%;

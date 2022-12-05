@@ -52,23 +52,23 @@ let reviewObject = {
     data: [
         {
             link: 'img/comment/comment-1.jpg',
-            surname: 'Анна Рыбакова',
-            text: 'Рыбный текст – это текст, выполняющий исключительно утилитарную функцию. Он не вписывается в контекст сайта, на котором используется, и нужен только для заполнения пространства.'
+            surname: 'Lee Ko',
+            text: ' I had problems with being overweight, besides that, I am a diabetic. I`m not a big fan of sports, and I never refuse good food. When I started taking Dietica my weight began to decrease. I can say for sure that these capsules work, even my husband noticed the changes. Now I don`t have any problems, I eat whatever I like, and I`m losing weight! Taking these capsules, I lost 11 kg in a month. After 3 months, the weight did not return.'
         },
         {
             link: 'img/comment/comment-2.jpg',
-            surname: 'Лена Жукова',
-            text: 'Рыбный текст – это текст, выполняющий исключительно утилитарную функцию. Он не вписывается в контекст сайта, на котором используется, и нужен только для заполнения пространства.'
+            surname: 'Yan Gu',
+            text: 'I`ve tried so many things... Diets, workouts… Nothing helped. I needed a product that would be as safe and effective as possible. Dietica is one of the best fat-burning products. I was very surprised when I saw only natural ingredients in the composition. With the help of these capsules, I weaned myself off junk food and lost 16 kg in 2 months. Thanks!'
         },
         {
             link: 'img/comment/comment-3.jpg',
-            surname: 'Света Пыжова',
-            text: 'Рыбный текст – это текст, выполняющий исключительно утилитарную функцию. Он не вписывается в контекст сайта, на котором используется, и нужен только для заполнения пространства.'
+            surname: 'Weng Lou',
+            text: 'I saw the first results after 7 days. Firstly, I wanted to eat less, which was unusual for me, I usually ate 2 full portions. Then I started doing yoga and my results immediately improved. After 3 months I lost 20 kg. I am satisfied with my shape now. Capsules work well. I advise everyone.'
         },
         {
             link: 'img/comment/comment-4.png',
-            surname: 'Кирил Крюков',
-            text: 'Рыбный текст – это текст, выполняющий исключительно утилитарную функцию. Он не вписывается в контекст сайта, на котором используется, и нужен только для заполнения пространства.'
+            surname: 'Lin Kwek',
+            text: ' I am 37 years old, I have been drinking the course of Dietica for 1 month. I lost 9 kg! Friends say that I`ve changed so much. I had heart problems due to being overweight, I couldn`t exercise (only exercise in the morning), and couldn`t be on a diet. Now the feelings are completely different, I have regained my health and beauty. I have a pleasant reason to buy new, beautiful clothes. Thank you for a quality product and a very favorable price.'
         }
     ]
 }
