@@ -24,28 +24,35 @@
             <nav class="main-header__nav main-header__nav--close">
                 <ul class="main-header__list">
                     <li class="main-header__item">
-                        <a class="main-header__item-link" href="#benefit">
-                            <p class="main-header__item-text">Benefit</p>
+                        <a class="main-header__item-link" href="#main">
+                            <p class="main-header__item-text" id="link">Main</p>
                         </a>
                     </li>
                     <li class="main-header__item">
-                        <a class="main-header__item-link" href="#instruction">
-                            <p class="main-header__item-text">Info</p>
+                        <a class="main-header__item-link" href="#info">
+                            <p class="main-header__item-text" id="link">Info</p>
                         </a>
                     </li>
                     <li class="main-header__item">
                         <a class="main-header__item-link" href="#use">
-                            <p class="main-header__item-text">How to use</p>
+                            <p class="main-header__item-text" id="link">How it works</p>
                         </a>
                     </li>
                     <li class="main-header__item">
-                        <a class="main-header__item-link" href="#compound">
-                            <p class="main-header__item-text">Ingredients</p>
+                        <a class="main-header__item-link" href="#program">
+                            <p class="main-header__item-text" id="link">Program</p>
                         </a>
                     </li>
                     <li class="main-header__item">
                         <a class="main-header__item-link" href="#review">
-                            <p class="main-header__item-text">Review</p>
+                            <p class="main-header__item-text" id="link">Review</p>
+                        </a>
+                    </li>
+                    <li class="main-header__item main-header__item--button">
+                        <a class="program__button program__button--second" href="{offer}&amp;p={p}&amp;custom2={subid}" style="margin: 0;">
+                            <span>
+                                Order
+                            </span>
                         </a>
                     </li>
                 </ul>
@@ -58,6 +65,7 @@
         <h1 class="visually-hidden">Weight loss product</h1>
 
         <section class="offer">
+            <a name="main"></a>
             <a name="top"></a>
             <div class="offer__wrapper">
                 <div class="offer__wrapper-emptiness">
@@ -88,6 +96,7 @@
 
         <!-- Информация -->
         <section class="info">
+            <a name="info"></a>
             <a name="step-1"></a>
             <div class="info__wrapper">
                 <ul class="info__list">
@@ -188,7 +197,7 @@
 
                 <p class="info__pointer-wrapper">
                     <span class="info__pointer-wrapper-text">
-                        Swipe
+                        Swipe to the right
                     </span>
 
                     <svg class="info__pointer" width="11" height="20">
@@ -209,6 +218,7 @@
 
         <!-- Видео -->
         <section class="change">
+            <a name="use"></a>
             <a name="step-2"></a>
             <div class="change__wrapper">
                 <iframe class="change__video" src="video/video.mp4" loading="lazy" width="350" height="200">
@@ -233,6 +243,7 @@
 
         <!-- Программа -->
         <section class="program">
+            <a name="program"></a>
             <div class="program__wrapper">
                 <h2 class="program__title">
                     Training and nutrition program for a sustainable result. You can lose weight in 30 days with the
@@ -747,9 +758,11 @@
                     </p>
 
                     <div class="program__button-wrapper">
-                        <button class="program__button program__button--second">
-                            Order
-                        </button>
+                        <a class="program__button program__button--second" href="{offer}&p={p}&custom2={subid}">
+                            <span>
+                                Order
+                            </span>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -758,6 +771,7 @@
 
         <!-- Отзыв  -->
         <section class="review">
+            <a name="review"></a>
             <div class="review__wrapper">
                 <div class="review__title-wrapper">
                     <h2 class="review__title">
@@ -874,7 +888,7 @@
                 </div>
 
                 <div class="action__link-wrapper-content">
-                    <a class="action__link-wrapper" href="">
+                    <a class="action__link-wrapper" href="{offer}&p={p}&custom2={subid}">
                         <p class="action__link">
                             Order
                         </p>

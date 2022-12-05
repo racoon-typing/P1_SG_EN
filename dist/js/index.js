@@ -1,3 +1,4 @@
+// Меню Бургер / Крестик
 let buttonNav = document.querySelector('.main-header__button-nav');
 let navNode = document.querySelector('.main-header__nav');
 let buttonNavIcon = document.querySelector('.main-header__button-nav--icon');
@@ -19,6 +20,22 @@ if (buttonNav) {
         }
     });
 }
+
+let menuList = document.querySelector('.main-header__list');
+
+menuList.addEventListener('click', (e) => {
+        if (e.target.id === 'link') {
+            // Закрытие меню
+            navNode.classList.remove('main-header__nav--open');
+            navNode.classList.add('main-header__nav--close');
+
+            // Кнопка крестик
+            buttonNav.classList.remove('main-header__button-nav--cross');
+            buttonNav.classList.add('main-header__button-nav');
+            buttonNavIcon.style.display = 'block';
+        }
+});
+
 
 // Дата + 1 день
 function getData() {
@@ -140,28 +157,23 @@ listNode.addEventListener('click', function (e) {
 let buttunOpenModalProgram = document.querySelector('.program__button');
 let ModalWindowProgram = document.querySelector('.program__modal-window');
 
+// Функция открытия модального окна
 function openModalWindowProgram() {
     ModalWindowProgram.style.display = 'block';
     mainContainer.style.overflow = 'hidden';
-    ModalWindowProgram.classList.add('open-ModalWindowProgram')
-
-    // if () {
-
-    // }
 }
 
 buttunOpenModalProgram.addEventListener('click', openModalWindowProgram);
 
 
 let buttonCloseModalProgram = document.querySelector('.program__modal-window-wrapper__big-button');
-
+// Функция закрытия модального окна
 function closeModalWindowProgram() {
-    console.log('Клик');
     ModalWindowProgram.style.display = 'none';
     mainContainer.style.overflow = 'auto';
-
-
 }
 
-buttonCloseModalProgram.addEventListener('click', openModalWindowProgram);
+buttonCloseModalProgram.addEventListener('click', closeModalWindowProgram);
+
+
 
