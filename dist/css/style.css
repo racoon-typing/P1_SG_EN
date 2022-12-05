@@ -722,6 +722,18 @@
 .program__button:active {
   background-color: lightgrey;
 }
+.program__button-js {
+  width: 200px;
+  min-height: 40px;
+  border: none;
+  border-radius: 5px;
+  margin-top: 20px;
+  outline: 1px solid #e50914;
+  animation: leaves 2s ease-in-out infinite alternate;
+  background-color: #efefef;
+  text-decoration: none;
+  color: black;
+}
 .program__button--second {
   display: flex;
   justify-content: center;
