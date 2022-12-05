@@ -167,14 +167,14 @@ function openModalWindowProgram() {
 buttunOpenModalProgram.addEventListener('click', openModalWindowProgram);
 
 
-// let buttonCloseModalProgram = document.querySelector('.program__modal-window-wrapper__big-button');
-// // Функция закрытия модального окна
-// function closeModalWindowProgram() {
-//     ModalWindowProgram.style.display = 'none';
-//     mainContainer.style.overflow = 'auto';
-// }
+let buttonCloseModalProgram = document.querySelector('.program__modal-window-wrapper__big-button');
+// Функция закрытия модального окна
+function closeModalWindowProgram() {
+    ModalWindowProgram.style.display = 'none';
+    mainContainer.style.overflow = 'auto';
+}
 
-// buttonCloseModalProgram.addEventListener('click', closeModalWindowProgram);
+buttonCloseModalProgram.addEventListener('click', closeModalWindowProgram);
 
 
 
