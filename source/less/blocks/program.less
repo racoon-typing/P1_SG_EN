@@ -52,6 +52,12 @@
         &:active {
             background-color: lightgrey;
         }
+
+        &-wrapper {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
     }
 
     @keyframes leaves {
@@ -66,7 +72,7 @@
     }
 
     &__modal-window {
-        // display: none;
+        display: none;
         position: absolute;
         box-sizing: border-box;
         width: 100%;
@@ -84,6 +90,7 @@
             box-sizing: border-box;
             border-radius: 5px;
             padding: 10px;
+            padding-bottom: 30px;
             overflow-y: auto;
             background-color: #ffffff;
 
@@ -168,6 +175,12 @@
                 padding: 0;
                 margin: 0;
                 list-style-type: none;
+                margin-bottom: 20px;
+
+                &--number {
+                    padding-left: 20px;
+                    list-style-type: decimal;
+                }
             }
 
             &-item {

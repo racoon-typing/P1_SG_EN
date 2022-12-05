@@ -136,31 +136,32 @@ listNode.addEventListener('click', function (e) {
 
 
 
+// Открывает программу
+let buttunOpenModalProgram = document.querySelector('.program__button');
+let ModalWindowProgram = document.querySelector('.program__modal-window');
+
+function openModalWindowProgram() {
+    ModalWindowProgram.style.display = 'block';
+    mainContainer.style.overflow = 'hidden';
+    ModalWindowProgram.classList.add('open-ModalWindowProgram')
+
+    // if () {
+
+    // }
+}
+
+buttunOpenModalProgram.addEventListener('click', openModalWindowProgram);
 
 
+let buttonCloseModalProgram = document.querySelector('.program__modal-window-wrapper__big-button');
 
-// Равным образом консультация с широким активом способствует подготовки и реализации систем
-// массового
-// участия.Равным образом консультация с широким активом способствует подготовки и реализации
-// систем
-// массового
+function closeModalWindowProgram() {
+    console.log('Клик');
+    ModalWindowProgram.style.display = 'none';
+    mainContainer.style.overflow = 'auto';
 
-// Инициализируем слайдер 
-// new Swiper('.image-slider', {
-//     // Стрелки
-//     navigation: {
-//         prevEl: '.swiper-button-prev',
-//         nextEl: '.swiper-button-next'
-//     },
-//     // Навигация
-//     // Булеты, текущее положение
-//     pagination: {
-//         el: '.swiper-pagination',
-//         // Буллеты
-//         clickable: true,
-//         // Динамические булеты
-//         dynamicBullets: true,
-//     },
-//     // Отступ между слайдами
-//     spaceBetween: 30,
-// });
+
+}
+
+buttonCloseModalProgram.addEventListener('click', openModalWindowProgram);
+

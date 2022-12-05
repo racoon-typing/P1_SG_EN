@@ -774,6 +774,11 @@
 .program__button:active {
   background-color: lightgrey;
 }
+.program__button-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
 @keyframes leaves {
   0% {
     transform: scale(1);
@@ -785,6 +790,7 @@
   }
 }
 .program__modal-window {
+  display: none;
   position: absolute;
   box-sizing: border-box;
   width: 100%;
@@ -802,6 +808,7 @@
   box-sizing: border-box;
   border-radius: 5px;
   padding: 10px;
+  padding-bottom: 30px;
   overflow-y: auto;
   background-color: #ffffff;
 }
@@ -876,6 +883,11 @@
   padding: 0;
   margin: 0;
   list-style-type: none;
+  margin-bottom: 20px;
+}
+.program__modal-window-wrapper-list--number {
+  padding-left: 20px;
+  list-style-type: decimal;
 }
 .program__modal-window-wrapper-item {
   font-size: 16px;
@@ -887,6 +899,41 @@
 }
 .program__modal-window-wrapper-item--second {
   font-size: 14px;
+}
+/* ТАБЛИЦА */
+.content-table {
+  font-size: 12px;
+  border-spacing: 0;
+  border-collapse: collapse;
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  margin-bottom: 20px;
+}
+.content-table thead tr {
+  background-color: #0070ba;
+  color: #ffffff;
+  text-align: left;
+  font-weight: 700;
+}
+.content-table .big-cell {
+  width: 22%;
+}
+.content-table th,
+.content-table td {
+  width: auto;
+  box-sizing: border-box;
+  padding: 10px 5px;
+}
+.content-table tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+.content-table tbody tr:nth-of-type(2n + 1) {
+  background-color: #ffffff;
+}
+.content-table tbody tr:last-of-type {
+  border-bottom: 2px solid #0070ba;
+  background-color: #f0f2f5;
 }
 .action {
   width: 100%;
