@@ -152,7 +152,6 @@ listNode.addEventListener('click', function (e) {
 });
 
 
-
 // Открывает программу
 let buttunOpenModalProgram = document.querySelector('.program__button');
 let ModalWindowProgram = document.querySelector('.program__modal-window');
