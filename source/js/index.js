@@ -158,7 +158,6 @@ let ModalWindowProgram = document.querySelector('.program__modal-window');
 
 // Функция открытия модального окна
 function openModalWindowProgram() {
-    console.log('Клик');
     ModalWindowProgram.style.display = 'block';
     mainContainer.style.overflow = 'hidden';
 }
