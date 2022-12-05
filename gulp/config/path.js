@@ -31,5 +31,5 @@ export const path = {
     buildFolder: buildFolder,
     srcFolder: srcFolder,
     rootFolder: rootFolder,
-    ftp: 'SG/P1_SG_EN'
+    ftp: 'SG/'
 }
