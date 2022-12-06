@@ -21,6 +21,9 @@
   line-height: 18px;
   color: #444444;
 }
+.page__body .no-margin__bottom {
+  margin-bottom: 0;
+}
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -39,17 +42,78 @@
   background-color: transparent;
   z-index: 1;
 }
+.main-header__link {
+  text-decoration: none;
+}
 .main-header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   position: relative;
   box-sizing: border-box;
   max-width: 500px;
   margin: 0 auto;
-  padding-top: 40px;
+  padding: 5px 15px;
+}
+.main-header__wrapper-left {
+  display: flex;
+  align-items: center;
+}
+.main-header__wrapper-left-logo {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+.main-header__wrapper-left-text {
+  margin: 0;
+  font-size: 16px;
+  line-height: normal;
+  font-weight: 700;
+  color: #e50914;
+  margin-bottom: 2px;
+}
+.main-header__wrapper-left-text--second {
+  color: #444444;
+}
+.main-header__wrapper-left-text-wrapper {
+  min-height: 40px;
+  margin-right: 10px;
+}
+.main-header__wrapper-left-subscribers {
+  margin: 0;
+  color: #00000073;
+}
+.main-header__wrapper-left-wrapperLink {
+  display: flex;
+  align-items: flex-start;
+  box-sizing: border-box;
+  min-height: 40px;
+  padding-top: 3px;
+}
+.main-header__wrapper-left-wrapperLink--position {
+  display: flex;
+  align-items: center;
+  min-height: 20px;
+}
+.main-header__wrapper-left-subscribeLink {
+  width: 20px;
+  height: 20px;
+  margin-right: 3px;
+}
+.main-header__wrapper-left-textLink {
+  margin: 0;
+  font-size: 15px;
+  line-height: 15px;
+  color: #ff5317;
+}
+.main-header__wrapper-right-icon {
+  fill: #00000073;
 }
 .main-container {
   position: relative;
   width: 100%;
   flex-grow: 1;
+  padding-top: 60px;
 }
 .main-footer {
   width: 100%;
@@ -64,3 +128,35 @@
   padding: 20px;
 }
 /* ТАБЛИЦА */
+.content__title {
+  padding: 0;
+  font-weight: 700;
+  color: #000;
+  word-wrap: break-word;
+  word-break: normal;
+  font-size: 30px;
+  line-height: 36px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.content__article {
+  font-size: 14px;
+  line-height: 18px;
+  color: #00000073;
+  margin: 16px 20px 8px;
+}
+.content__img {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 16px;
+}
+.content__text {
+  margin: 0;
+  font-size: 18px;
+  line-height: 28px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 16px;
+}
