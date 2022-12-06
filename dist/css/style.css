@@ -24,6 +24,12 @@
 .page__body .no-margin__bottom {
   margin-bottom: 0;
 }
+.page__body .margin__bottom {
+  margin-bottom: 15px;
+}
+.page__body .text-red {
+  color: #e50914;
+}
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -39,7 +45,7 @@
   position: fixed;
   top: 0;
   right: 0;
-  background-color: transparent;
+  background-color: #ffffff;
   z-index: 1;
 }
 .main-header__link {
@@ -54,6 +60,7 @@
   max-width: 500px;
   margin: 0 auto;
   padding: 5px 15px;
+  padding-top: 15px;
 }
 .main-header__wrapper-left {
   display: flex;
@@ -112,6 +119,8 @@
 .main-container {
   position: relative;
   width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
   flex-grow: 1;
   padding-top: 60px;
 }
@@ -159,4 +168,48 @@
   margin-left: 20px;
   margin-right: 20px;
   margin-bottom: 16px;
+}
+.content__caption {
+  margin: 8px 20px 0;
+  font-size: 14px;
+  line-height: 18px;
+  color: #000000cc;
+}
+.content__sub-title {
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 600;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 16px;
+}
+.content__list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 10px;
+}
+.content__item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.content__item:last-child {
+  margin-bottom: 0;
+}
+.content__item-icon {
+  width: 80px;
+  height: 80px;
+}
+.content__item-text {
+  margin: 0;
+  font-size: 16px;
+  line-height: normal;
+}
+.content__video {
+  width: 100%;
+  height: 318px;
+  margin-bottom: 10px;
 }
