@@ -20,6 +20,7 @@
   font-size: 14px;
   line-height: 18px;
   color: #444444;
+  background-color: #e6e6e5;
 }
 .page__body .no-margin__bottom {
   margin-bottom: 0;
@@ -139,6 +140,9 @@
 /* ТАБЛИЦА */
 .content {
   box-sizing: border-box;
+  background-color: #ffffff;
+  padding-bottom: 50px;
+  border-radius: 0 0 25px 25px;
 }
 .content__title {
   padding: 0;
@@ -228,14 +232,16 @@
 .content__comments {
   box-sizing: border-box;
   padding: 40px 20px;
-  margin-top: 50px;
-  padding-top: 60px;
   border-top: 1px solid #3333331f;
+  background-color: #ffffff;
+  border-radius: 25px;
+  margin-top: 8px;
 }
 .content__comments-count {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 28px;
 }
 .content__comments-count-text {
   margin: 0;
@@ -259,4 +265,48 @@
   padding: 0;
   margin: 0;
   list-style-type: none;
+}
+.content__comments-item {
+  margin-bottom: 20px;
+}
+.content__comments-item:last-child {
+  margin-bottom: 0;
+}
+.content__comments-item--wrapper-top {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+.content__comments-item-photo {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+.content__comments-item-name {
+  margin: 0;
+  font-size: 16px;
+  line-height: 20px;
+  margin-right: 8px;
+}
+.content__comments-item-data {
+  color: #b5c1c0;
+  margin: 0;
+  font-size: 14px;
+  line-height: 18px;
+}
+.content__comments-item-text {
+  margin: 0;
+  font-size: 16px;
+  line-height: 22px;
+}
+.content__comments-button {
+  margin: 0;
+  padding: 0;
+  margin-top: 20px;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 600;
+  border: none;
+  background-color: transparent;
 }
