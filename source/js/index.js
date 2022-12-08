@@ -32,8 +32,6 @@ let commentsNode = document.querySelectorAll('.content__comments-item');
 
 function pageOnLoad() {
     for (let i = 0; i < commentsNode.length; i++) {
-        console.log(commentsNode[i]);
-
         if (commentsNode[i]) {
             if (i >= 4) {
                 commentsNode[i].classList.add('visually-hidden');
@@ -50,8 +48,6 @@ let commentButton = document.querySelector('.content__comments-button');
 
 commentButton.addEventListener('click', () => {
     for (let i = 0; i < commentsNode.length; i++) {
-        console.log(commentsNode[i]);
-
         if (commentsNode[i]) {
             if (i >= 4) {
                 commentsNode[i].classList.remove('visually-hidden');
